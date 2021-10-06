@@ -108,7 +108,7 @@ android {
             buildConfigField "String", "BASE_URL", "\"https://get.dgc.gov.it/v1/dgc/\""
             buildConfigField "String", "SERVER_HOST", "\"get.dgc.gov.it\""
             buildConfigField "String", "CERTIFICATE_SHA", "\"sha256/7cZJIDPacG8FS3pq6Mvxg+7yBDM/VYc2alOcbVe/e74=\""
-            buildConfigField "String", "versionName", "\"1.1.0\""
+            buildConfigField "String", "versionName", "\"1.3.0\""
             buildConfigField "String", "SDK_VERSION", "\"1.0.0\""
 
             minifyEnabled false
@@ -172,8 +172,9 @@ dependencies {
     implementation Deps.hilt_work
     kapt Deps.androidx_hilt_compiler
     kapt Deps.androidx_room_compiler
-
+    implementation 'com.squareup.okhttp3:okhttp:4.4.1'
     implementation Deps.retrofit2
+    implementation 'com.squareup.okhttp3:okhttp:4.4.1'
     implementation Deps.log_interceptor
     implementation Deps.gson_converter
 

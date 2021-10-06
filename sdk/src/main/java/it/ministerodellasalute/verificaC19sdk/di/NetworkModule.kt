@@ -85,11 +85,11 @@ object NetworkModule {
     }
 
     private fun addLogging(httpClient: OkHttpClient.Builder) {
-        if (BuildConfig.DEBUG) {
+        /*if (BuildConfig.DEBUG) {
             val logging = HttpLoggingInterceptor()
             logging.level = HttpLoggingInterceptor.Level.BODY
             httpClient.addInterceptor(logging)
-        }
+        }*/
     }
 
     private fun addCertificateSHA(httpClient: OkHttpClient.Builder) {
