@@ -59,7 +59,7 @@ object NetworkModule {
         val httpClient = getHttpClient(cache).apply {
             addInterceptor(HeaderInterceptor())
         }
-        addLogging(httpClient)
+        //addLogging(httpClient)
         addCertificateSHA(httpClient)
 
         return httpClient.build()

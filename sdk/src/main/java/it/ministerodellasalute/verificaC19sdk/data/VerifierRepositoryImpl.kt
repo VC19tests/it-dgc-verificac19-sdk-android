@@ -133,6 +133,7 @@ class VerifierRepositoryImpl @Inject constructor(
                 db.keyDao().insert(key)
 
                 preferences.resumeToken = resumeToken
+                Log.i(VerifierRepositoryImpl::class.java.simpleName, "resume token: $resumeToken")
 
                 newResumeToken?.let {
                     val newToken = it.toLong()
